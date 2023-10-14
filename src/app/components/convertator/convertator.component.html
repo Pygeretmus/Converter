@@ -1,0 +1,39 @@
+<div class="container">
+    
+    <div class="section1">
+        
+        <span>Я маю</span>
+        
+        <div class="box"> 
+        
+            <input #first type="number" min="0" (input)="calculate(2)">
+        
+            <select #first_symbol (change)="calculate(2)">
+                <option value="980">UAH</option>
+                <option value="840">USD</option>
+                <option value="978">EUR</option>
+            </select>
+        
+        </div>
+
+    </div>
+    
+    <div class="section2">
+
+        <span>Я отримаю</span>
+        
+        <div class="box">
+        
+            <input #second type="number" min="0" (input)="calculate(1)">
+        
+            <select #second_symbol (change)="calculate(1)">
+                <option value="840">USD</option>
+                <option value="978">EUR</option>
+                <option value="980">UAH</option>
+            </select>
+        
+        </div>
+    
+    </div>
+
+</div>

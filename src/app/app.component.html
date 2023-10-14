@@ -1,0 +1,10 @@
+<div class="container">
+    
+    <app-header *ngFor="let money of cash" [money]="money"></app-header>
+
+</div>
+
+<h1 class="loading" *ngIf="loading"> Loading... </h1>
+
+<app-convertation *ngIf="!loading" [currency]="currency"></app-convertation>
+
